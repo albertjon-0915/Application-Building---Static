@@ -1,0 +1,147 @@
+/* .montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Montserrat", sans-serif;
+}
+
+body {
+     width: 100vw;
+     min-height: 100vh;
+     background: radial-gradient(
+          circle at bottom,
+          rgba(0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.8063200280112045) 58%,
+          rgba(38, 38, 38, 1) 100%
+     );
+     background-repeat: no-repeat;
+     overflow-y: auto;
+}
+.heroSectionContainer {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+}
+.heroSection {
+     display: grid;
+     place-items: center;
+     width: 60vw;
+     color: white;
+}
+.heroSection > h1 {
+     font-size: 4rem;
+}
+.heroSection > p {
+     font-size: 1rem;
+}
+.spanH1OnHeroSection {
+     color: aqua;
+     text-shadow: 0px 0px 5px aqua;
+}
+.heroButton {
+     min-width: 12em;
+     min-height: 4em;
+     color: aqua;
+     text-shadow: 0px 0px 15px aqua;
+     position: relative;
+     background: linear-gradient(
+          120deg,
+          rgba(38, 38, 38, 1) 0%,
+          rgba(38, 38, 38, 1) 40%,
+          rgba(0, 0, 0, 0.8063200280112045) 100%
+     );
+     box-shadow: 1px 0px 17px 1px rgb(26, 25, 25) inset, 7px 1px 17px 1px rgba(43, 43, 43, 0.932);
+     border: 1px solid rgba(38, 38, 38, 1);
+     border-radius: 35px;
+     transition: 0.2s ease-in-out;
+}
+.heroButton:hover {
+     text-shadow: 0px 0px 15px aqua, 0px 0px 25px aqua, 0px 0px 35px aqua, 0px 0px 45px aqua;
+}
+
+.cardContainer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 60vh;
+}
+.cardContainer > .cardTableContainer {
+     min-width: 50vw;
+}
+.card-body {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+     align-items: start;
+     min-height: 30em;
+     background: rgba(255, 255, 255, 0.1);
+     box-shadow: 0 8px 32px 0 rgba(0, 247, 255, 0.295);
+     backdrop-filter: blur(10px);
+     -webkit-backdrop-filter: blur(10px);
+     border-radius: 12px;
+     border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.cardImg {
+     transform: rotate(-65deg);
+     position: absolute;
+     top: -5em;
+     left: -3em;
+     max-width: 25em;
+}
+.subCardImg {
+     position: absolute;
+     right: -2em;
+     top: 2em;
+     max-width: 20em;
+     filter: drop-shadow(0 4px 8px aqua);
+}
+
+.carousel {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+}
+.carousel-item > img {
+     filter: drop-shadow(0 4px 8px aqua);
+}
+.carousel-caption {
+     padding: 1em;
+     border-radius: 10px;
+     background: linear-gradient(transparent, rgba(0, 0, 0, 0.411));
+     font-size: clamp(0.7rem, 1.2vw, 1.5rem);
+     filter: drop-shadow(0 4px 8px aqua);
+}
+#carouselExampleCaptions {
+     min-width: 40vw;
+     max-width: 50vw;
+}
+.carousel-item {
+     height: 40vh;
+}
+.carousel-item img {
+     height: 100%;
+     width: 100%;
+     object-fit: contain;
+}
+
+.allRightsReserve {
+     color: aqua;
+}
+.aqua {
+     filter: drop-shadow(0 0px 8px aqua);
+}
+.heightWidth {
+     width: 50px;
+     height: 50px;
+}
+.ListFooter {
+     list-style-type: none;
+}
